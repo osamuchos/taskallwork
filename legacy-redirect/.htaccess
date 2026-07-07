@@ -1,0 +1,16 @@
+# ricom-techno.com/taskallwork/ から taskall.work への恒久リダイレクト（301）
+# このファイルを旧サーバーの /taskallwork/ にアップロードしてください。
+
+RewriteEngine On
+RewriteBase /taskallwork/
+
+# 旧ページ名 → 新URL
+RewriteRule ^service\.html$ https://taskall.work/services/index.html [R=301,L]
+RewriteRule ^inquiry\.html$ https://taskall.work/contact/index.html [R=301,L]
+RewriteRule ^flow\.html$ https://taskall.work/flow/index.html [R=301,L]
+RewriteRule ^sitemap\.html$ https://taskall.work/sitemap.xml [R=301,L]
+RewriteRule ^search\.html$ https://taskall.work/services/index.html [R=301,L]
+RewriteRule ^about\.html$ https://taskall.work/about/index.html [R=301,L]
+
+# その他のパスは構造を維持して転送
+RewriteRule ^(.*)$ https://taskall.work/$1 [R=301,L]
