@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /taskallwork/
+
+Sitemap: https://ricom-techno.com/taskallwork/sitemap.xml
