@@ -1,7 +1,7 @@
 (function () {
   // Google Analytics 4 の測定ID（G- で始まる文字列）
   // https://analytics.google.com/ でプロパティ作成後、管理 > データストリーム から取得
-  var GA_ID = 'G-76DBSMWZMK';
+  var GA_ID = 'G-B32H9LV6XR';
 
   if (!GA_ID || GA_ID === 'G-XXXXXXXXXX') return;
 
