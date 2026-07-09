@@ -6,15 +6,16 @@
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <script>if(location.protocol==="http:"&&location.hostname!=="localhost"&&location.hostname!=="127.0.0.1")location.replace("https://"+location.host+location.pathname+location.search+location.hash);</script>
   <script src="/js/analytics.js"></script>
-  <title>サービス一覧｜エクセル・ワード作成／データ入力／ITサポート｜たすかるワーク</title>
-  <meta name="description" content="たすかるワークのサービス一覧。エクセル・ワードの資料作成、データ入力、紙資料のデジタル化、パソコンセットアップや遠隔サポートまで、オフィスの困りごとをまとめて解決。全国対応・お見積もり無料。">
+  <title>サービス一覧｜エクセル・ワード作成代行／データ入力代行／ITサポート｜たすかるワーク</title>
+  <meta name="description" content="たすかるワークのサービス一覧。エクセル・ワードの資料作成代行、データ入力代行、紙資料のデジタル化、パソコンセットアップや遠隔サポートまで、オフィスの事務作業・困りごとをまとめて解決。全国対応・お見積もり無料。">
+  <meta name="keywords" content="データ入力 代行,事務作業 代行,パソコン 業務代行,紙資料 デジタル化,エクセル 作成 代行,ワード 文書 作成 代行">
   <link rel="canonical" href="https://taskall.work/services/index.html">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="サービス一覧｜たすかるワーク">
-  <meta property="og:description" content="エクセル・ワードの資料作成からデータ入力、ITサポートまで。オフィスの困りごとをまとめて解決します。">
+  <meta property="og:title" content="サービス一覧｜エクセル・ワード作成代行／データ入力代行｜たすかるワーク">
+  <meta property="og:description" content="エクセル・ワードの資料作成代行からデータ入力代行、ITサポートまで。オフィスの事務作業・困りごとをまとめて解決します。">
   <meta property="og:url" content="https://taskall.work/services/index.html">
-  <meta property="og:image" content="https://taskall.work/image/logo.svg">
+  <meta property="og:image" content="https://taskall.work/image/logo.svg?v=3">
   <meta property="og:locale" content="ja_JP">
   <meta property="og:site_name" content="たすかるワーク">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,10 +25,26 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://taskall.work/" },
-      { "@type": "ListItem", "position": 2, "name": "サービス一覧", "item": "https://taskall.work/services/index.html" }
+    "@graph": [
+      {
+        "@type": "Service",
+        "name": "データ入力・パソコン業務代行",
+        "description": "データ入力代行、紙資料のデジタル化、データベース作成、データコンバートなど、事務作業・パソコン業務の代行サービス。1件から依頼可能。",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "たすかるワーク",
+          "url": "https://taskall.work/"
+        },
+        "areaServed": "JP",
+        "serviceType": "データ入力代行"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://taskall.work/" },
+          { "@type": "ListItem", "position": 2, "name": "サービス一覧", "item": "https://taskall.work/services/index.html" }
+        ]
+      }
     ]
   }
   </script>
@@ -37,7 +54,7 @@
   <header class="header" role="banner">
     <div class="header__inner">
       <a href="/" class="logo" aria-label="たすかるワーク TaskAllWork トップページ">
-        <img src="/image/logo-mark.svg" alt="" class="logo__mark" width="42" height="42">
+        <img src="/image/logo-mark.svg?v=3" alt="" class="logo__mark" width="42" height="42">
         <span class="logo__text">
           <span class="logo__ja">たすか<span class="logo__accent">る</span>ワーク</span>
           <span class="logo__en">Task <span class="logo__accent">All</span> Work</span>
@@ -65,8 +82,8 @@
         <nav class="breadcrumb" aria-label="パンくずリスト">
           <a href="/">ホーム</a> &gt; サービス一覧
         </nav>
-        <h1 class="page-header__title">サービス一覧</h1>
-        <p class="page-header__lead">資料1枚のスポット依頼から事務作業の丸ごと代行まで、必要な分だけご利用いただけます</p>
+        <h1 class="page-header__title">資料作成・事務作業の代行サービス一覧</h1>
+        <p class="page-header__lead">エクセル・ワードの資料1枚のスポット依頼から、データ入力など事務作業の丸ごと代行まで、必要な分だけご利用いただけます</p>
       </div>
     </div>
 
@@ -77,8 +94,8 @@
             <div class="icon-box service-card__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
             </div>
-            <h2 class="service-card__title">エクセル資料作成</h2>
-            <p class="service-card__text">見積書・請求書・集計表・グラフなど、エクセルのビジネス資料をプロが作成。関数やマクロで「入力するだけ」の仕組みづくりも承ります。</p>
+            <h2 class="service-card__title">エクセル資料作成代行</h2>
+            <p class="service-card__text">見積書・請求書・売上集計表・グラフなど、エクセルのビジネス資料の作成をプロが代行。関数やマクロで「入力するだけ」の仕組みづくりも承ります。</p>
             <ul class="service-card__list">
               <li>見積書・請求書・領収書</li>
               <li>売上集計表・経費管理表</li>
@@ -91,8 +108,8 @@
             <div class="icon-box service-card__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
             </div>
-            <h2 class="service-card__title">ワード文書作成</h2>
-            <p class="service-card__text">報告書・議事録・案内状・履歴書など、読み手に伝わるビジネス文書に仕上げます。手書きメモからの文書化もお任せください。</p>
+            <h2 class="service-card__title">ワード文書作成代行</h2>
+            <p class="service-card__text">報告書・議事録・案内状・履歴書など、ビジネス文書の作成を代行し、読み手に伝わる形に仕上げます。手書きメモからの文書化もお任せください。</p>
             <ul class="service-card__list">
               <li>報告書・提案書の作成</li>
               <li>議事録・会議資料</li>
@@ -105,8 +122,8 @@
             <div class="icon-box service-card__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 22h8M12 18v4"/></svg>
             </div>
-            <h2 class="service-card__title">パソコン業務代行</h2>
-            <p class="service-card__text">溜まった紙の書類、散らかったデータ、終わらない入力作業。手が回らない事務作業を、1件からまとめてお引き受けします。</p>
+            <h2 class="service-card__title">データ入力・パソコン業務代行</h2>
+            <p class="service-card__text">溜まった紙の書類、散らかったデータ、終わらない入力作業。データ入力の代行をはじめ、手が回らない事務作業を1件からまとめてお引き受けします。</p>
             <ul class="service-card__list">
               <li>データ入力・修正</li>
               <li>紙資料のデジタル化</li>
@@ -149,14 +166,14 @@
         <div>
           <div class="footer__brand">
           <a href="/" class="logo logo--footer" aria-label="たすかるワーク トップページ">
-            <img src="/image/logo-mark.svg" alt="" class="logo__mark" width="42" height="42">
+            <img src="/image/logo-mark.svg?v=3" alt="" class="logo__mark" width="42" height="42">
             <span class="logo__text">
               <span class="logo__ja">たすか<span class="logo__accent">る</span>ワーク</span>
               <span class="logo__en">Task <span class="logo__accent">All</span> Work</span>
             </span>
           </a>
         </div>
-          <p class="footer__desc">エクセル・ワードのビジネス資料作成からパソコン業務代行まで、オフィスの便利屋としてお手伝いします。</p>
+          <p class="footer__desc">見積書・請求書などのエクセル資料作成代行、報告書・議事録などのワード文書作成代行から、データ入力・事務作業の代行まで。オフィスの便利屋としてお手伝いします。</p>
         </div>
         <div>
           <h3 class="footer__heading">サービス</h3>
