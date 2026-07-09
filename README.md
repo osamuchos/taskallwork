@@ -1,6 +1,6 @@
-# 助かるワーク - リニューアルサイト
+# たすかるワーク - リニューアルサイト
 
-オフィスの便利屋「助かるワーク」のリニューアル版Webサイトです。
+オフィスの便利屋「たすかるワーク」のリニューアル版Webサイトです。
 
 ## サイト構成
 
@@ -39,7 +39,7 @@ python3 -m http.server 8080
 ### ロゴ
 - 新ロゴマーク `image/logo-mark.svg`：吹き出し（お客様の「助かった！」の声）× チェックマーク（あらゆる作業を完了 = Task All）の2つの意味を表現
 - 横長ロゴ `image/logo.svg` / `image/logo-white.svg`、ファビコン `favicon.svg` も同デザインで統一
-- ワードマークは「助か**る**ワーク / TASK **ALL** WORK」の「る」「ALL」をオレンジで強調
+- ワードマークは「たすか**る**ワーク / TASK **ALL** WORK」の「る」「ALL」をオレンジで強調
 
 ### デザイン
 - Google Fonts（Noto Sans JP / Zen Maru Gothic / Montserrat）を導入
