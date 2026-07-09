@@ -64,7 +64,8 @@ python3 -m http.server 8080
 ## 今後の改善案
 
 - [ ] お問い合わせフォームのバックエンド連携（Formspree, Google Forms等）
-- [ ] Google Analytics / Search Console の設定
+- [x] Google Analytics 4（`js/analytics.js` に測定IDを設定）
+- [ ] Google Search Console の設定
 - [ ] OGP用の画像作成（1200x630px）
 - [ ] ブログ・コラムページの追加（SEO強化）
 - [ ] 料金ページの具体化
