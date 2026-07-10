@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ブログ用サービス案内ボックス｜プレビュー</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      background: #fff;
+      font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+      color: #1f2d3d;
+    }
+    .preview-wrap {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .preview-label {
+      margin: 48px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #e3eaf1;
+      font-size: 14px;
+      font-weight: 700;
+      color: #0e6ba8;
+    }
+    .preview-label:first-child {
+      margin-top: 0;
+    }
+    .article-mock {
+      font-size: 16px;
+      line-height: 1.9;
+      color: #55677a;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="preview-wrap">
+    <h1 style="font-size: 24px; margin-bottom: 8px;">ブログ用サービス案内ボックス</h1>
+    <p style="color: #55677a; margin-bottom: 32px;">記事末尾に挿入するHTMLの見え方を確認できます。</p>
+
+    <p class="preview-label">汎用版（service-box.html）</p>
+    <p class="article-mock">……ここに記事本文が続きます。最後の段落のあとに、下のボックスを挿入してください。</p>
+
+    <!--#include virtual="embed/service-box.html" -->
+    <div id="box-general"></div>
+
+    <p class="preview-label">エクセル記事向け（service-box-excel.html）</p>
+    <p class="article-mock">エクセルの使い方や関数の解説記事の末尾向けです。</p>
+    <div id="box-excel"></div>
+
+    <p class="preview-label">ワード記事向け（service-box-word.html）</p>
+    <p class="article-mock">報告書・議事録など文書作成の記事末尾向けです。</p>
+    <div id="box-word"></div>
+  </div>
+
+  <script>
+    async function loadBox(id, path) {
+      const res = await fetch(path);
+      const html = await res.text();
+      const cleaned = html.replace(/<!--[\s\S]*?-->/g, "").trim();
+      document.getElementById(id).innerHTML = cleaned;
+    }
+    loadBox("box-general", "embed/service-box.html");
+    loadBox("box-excel", "embed/service-box-excel.html");
+    loadBox("box-word", "embed/service-box-word.html");
+  </script>
+</body>
+</html>
