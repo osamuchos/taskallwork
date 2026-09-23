@@ -16,17 +16,18 @@
 
 ```
 taskallwork/
-├── index.html          # トップページ
-├── excel/index.html    # エクセル資料作成
-├── word/index.html     # ワード文書作成
-├── services/index.html # サービス一覧
-├── flow/index.html     # ご依頼の流れ
-├── contact/index.html  # お問い合わせ
-├── about/index.html    # 運営会社
-├── css/style.css       # スタイルシート
-├── js/main.js          # JavaScript
-├── sitemap.xml         # サイトマップ
-└── robots.txt          # クローラー設定
+├── index.html               # トップページ
+├── consultation/index.html  # 仕事を楽にする相談
+├── excel/index.html         # エクセル資料作成
+├── word/index.html          # ワード文書作成
+├── services/index.html      # サービス一覧
+├── flow/index.html          # ご依頼の流れ
+├── contact/index.html       # お問い合わせ
+├── about/index.html         # 運営会社
+├── css/style.css            # スタイルシート
+├── js/main.js               # JavaScript
+├── sitemap.xml              # サイトマップ
+└── robots.txt               # クローラー設定
 ```
 
 ## デプロイ方法
