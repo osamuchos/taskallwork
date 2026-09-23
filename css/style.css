@@ -1407,7 +1407,8 @@ ul, ol {
   }
 }
 
-@media (max-width: 768px) {
+/* ナビ項目増加に合わせ、タブレット幅でもハンバーガーに切り替え */
+@media (max-width: 1100px) {
   .nav__list {
     display: none;
     position: absolute;
@@ -1441,7 +1442,10 @@ ul, ol {
   .nav__toggle {
     display: block;
   }
+}
 
+@media (max-width: 768px) {
+  /* 狭い画面ではヘッダーCTAを隠し、メニュー内の遷移に寄せる */
   .nav .btn {
     display: none;
   }
